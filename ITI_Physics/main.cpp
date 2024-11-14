@@ -1,4 +1,6 @@
 #include <SFML/Graphics.hpp>
+#include "PhysicsWorld.h"
+#include "Renderer.h"
 
 int main()
 {
