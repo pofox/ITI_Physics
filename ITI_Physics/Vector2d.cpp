@@ -107,3 +107,13 @@ void Vector2d::print()
 {
 	printf("%fi+%fj\n", this->x, this->y);
 }
+
+Vector2d operator*(float a, Vector2d vector)
+{
+	return Vector2d(a*vector.x,a*vector.y);
+}
+
+Vector2d operator*=(float a, Vector2d vector)
+{
+	return Vector2d(a*vector.x,a*vector.y);
+}

@@ -5,7 +5,7 @@
 class Particle
 {
 public:
-	Vector2d postion;
+	Vector2d position;
 	Vector2d velocity;
 	Vector2d acceleration;
 	Vector2d forces;
