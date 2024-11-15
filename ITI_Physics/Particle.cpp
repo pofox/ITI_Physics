@@ -41,6 +41,7 @@ Particle::Particle(ConvexShape shape, float mass, float drag)
 	{
 		satCollider.points.push_back(Vector2d(shape.getPoint(i).x,shape.getPoint(i).y));
 	}
+	satCollider.updatePosition(position);
 	type = SAT;
 }
 
@@ -59,7 +60,6 @@ void Particle::Update(float dt)
 		break;
 	case AABB:
 		aabbCollider.updatePosition(position);
-
 		break;
 	case SAT:
 		satCollider.updatePosition(position);
