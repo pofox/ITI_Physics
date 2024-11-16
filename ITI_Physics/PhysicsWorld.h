@@ -11,6 +11,7 @@ private:
 public:
 	void addParticle(Particle* particle);
 	void Update(float deltaTime);
+	void HandelCollision(Particle* p1, Particle* p2);
 
 	static const Vector2d gravity;
 };
